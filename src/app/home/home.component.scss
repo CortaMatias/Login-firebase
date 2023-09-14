@@ -26,7 +26,6 @@
 }
 
 
-
 /* Estilos para los botones en la barra de herramientas */
 .toolbar button {
   margin-left: 10px;
@@ -35,6 +34,14 @@
   color: white;
   background-color: #1976d1;
   border-radius: 10px;
+}
+
+.container {
+  width: 90%;
+  height: 90%; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 

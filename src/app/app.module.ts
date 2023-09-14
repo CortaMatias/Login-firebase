@@ -10,7 +10,8 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { HomeComponent } from './home/home.component';
 import {ReactiveFormsModule} from "@angular/forms";
-import { ErrorComponent } from './error/error.component'
+import { ErrorComponent } from './error/error.component';
+import { SobreMiComponent } from './sobre-mi/sobre-mi.component'
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ErrorComponent } from './error/error.component'
     LoginComponent,
     RegisterComponent,
     HomeComponent,
-    ErrorComponent
+    ErrorComponent,
+    SobreMiComponent
   ],
   imports: [
     BrowserModule,
