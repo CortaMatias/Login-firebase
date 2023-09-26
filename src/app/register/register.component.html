@@ -16,15 +16,16 @@
 <form [formGroup]="formReg"  (ngSubmit)="onSubmit()">
     <h3>Register Here</h3>
 
-    <label for="username">User name</label>
-    <input type="text" placeholder="Email" id="usernameRegister" class="form-control" formControlName="email">
+    <label for="username">User Name</label>
+    <input type="text" placeholder="User Name" id="username" class="form-control" formControlName="username" >
+
+    <label for="email">Email</label>
+    <input type="text" placeholder="Email" id="emailRegister" class="form-control" formControlName="email">
 
     <label for="password">Password</label>
     <input type="password" placeholder="Password" id="passwordRegister" class="form-control" formControlName="password">
 
+  
     <button type="submit">Register</button>
-    <div class="social">
-      <div class="go"><i class="fab fa-google"></i>  Google</div>
-      <div class="fb"><i class="fab fa-facebook"></i>  Facebook</div>
-    </div>
+  
 </form>

@@ -4,8 +4,7 @@
  
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
-    <!--Stylesheet-->  
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet"> 
 </head>
 
 <div class="background">
@@ -15,7 +14,7 @@
 <form [formGroup]="formReg"  (ngSubmit)="onSubmit()">
   <h3>Log In</h3>
 
-  <label for="username">User name</label>
+  <label for="username">Email</label>
   <input type="text" placeholder="Email" id="usernameRegister" class="form-control" formControlName="email">
 
   <label for="password">Password</label>
@@ -26,7 +25,6 @@
     <a (click)="redirectToRegister()" class="register-link">¿Aún no estás registrado?</a>
   </div>
   <div class="social">
-    <div class="go"><i class="fab fa-google"></i>  Google</div>
-    <div class="fb"><i class="fab fa-facebook"></i>  Facebook</div>
+    <button type="button" class="go" (click)="autoLogin()">Quick access</button>
   </div>
 </form>

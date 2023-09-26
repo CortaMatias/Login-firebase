@@ -1,18 +1,42 @@
 import { Injectable } from '@angular/core';
-import {Auth, createUserWithEmailAndPassword, signInWithEmailAndPassword , signOut} from "@angular/fire/auth"
+import {Auth, createUserWithEmailAndPassword, signInWithEmailAndPassword , signOut, updateProfile } from "@angular/fire/auth"
+
 @Injectable({
   providedIn: 'root'
 })
 export class UserService {
 
+  demoUser = {
+    email: 'matias@gmail.com',
+    password: '123456'
+  };
+
   constructor(private auth : Auth) {  }
 
-  register ({email, password } : any){
-    return createUserWithEmailAndPassword(this.auth, email, password);
+  async register({ email, password, username }: any) {
+    try {
+      const userCredential = await createUserWithEmailAndPassword(this.auth, email, password);
+      const user = userCredential.user;
+      await updateProfile(user, { displayName: username });
+      return user;
+    } catch (error) {
+      throw error;
+    }
   }
+  
 
   login ({email,password} : any){
     return signInWithEmailAndPassword(this.auth, email,password);
+  }
+
+  getCurrentUser(): Promise<any> {
+    return new Promise((resolve, reject) => {
+      this.auth.onAuthStateChanged((user) => {
+        resolve(user); 
+      }, (error) => {
+        reject(error); 
+      });
+    });
   }
 
   logout () {

@@ -62,7 +62,7 @@ form *{
 }
 form input {
     font-family: 'Poppins', sans-serif;
-    color: gray; 
+    color: white; 
     letter-spacing: 0.5px;
     outline: none;
     border: none;
@@ -96,7 +96,7 @@ input{
     color: #e5e5e5;
 }
 button{
-    margin-top: 30px;
+    margin-top: 15px;
     width: 100%;
     background-color: black;
     color: #080710;
@@ -120,7 +120,6 @@ button{
   }
 
 .social{
-  margin-top: 15px;
   display: flex;
 }
 .social div{
@@ -131,13 +130,4 @@ button{
   background-color: rgba(255,255,255,0.27);
   color: #eaf0fb;
   text-align: center;
-}
-.social div:hover{
-  background-color: rgba(255,255,255,0.47);
-}
-.social .fb{
-  margin-left: 25px;
-}
-.social i{
-  margin-right: 4px;
 }
