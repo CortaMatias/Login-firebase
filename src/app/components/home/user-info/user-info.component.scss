@@ -1,0 +1,23 @@
+div {
+    width: 600px; 
+    padding: 40px; 
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.9);
+    transition: 0.3s;
+    border-radius: 10px; 
+}
+
+div:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+p {
+    text-align: left;
+    color: gray;
+    font-size: 24px; 
+    margin-bottom: 30px;
+}
+
+i {
+    font-size: 24px;
+    margin-right: 20px;
+}

@@ -7,7 +7,7 @@ import {Auth, createUserWithEmailAndPassword, signInWithEmailAndPassword , signO
 export class UserService {
 
   demoUser = {
-    email: 'matias@gmail.com',
+    email: 'gabriel@gmail.com',
     password: '123456'
   };
 
