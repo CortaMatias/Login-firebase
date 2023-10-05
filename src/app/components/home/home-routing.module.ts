@@ -17,6 +17,15 @@ const routes: Routes = [
         path: 'user-info', loadChildren: () => import ('./user-info/user-info.module')
         .then(mod => mod.UserInfoModule)
       },
+      {
+        path: 'games', loadChildren: () => import ('./games/games.module')
+        .then(mod => mod.GamesModule)
+      },
+      {
+        path: 'ahorcado', loadChildren: () => import ('./games/ahorcado/ahorcado.module')
+        .then(mod => mod.AhorcadoModule)
+      },
+
   ]
   }
 ];

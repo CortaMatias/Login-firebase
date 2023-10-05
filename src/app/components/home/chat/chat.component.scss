@@ -7,12 +7,17 @@
     background-color: #1976d2;
     font-weight: 700;
 }
+.contendedorMensajes{
+    background-image: url("../../../../assets/images/fondo-chat.png"); 
+     background-position: center;
+     background-size: cover;
+    
+}
 
 .card-body{
     padding: 0.5rem;
-    background-repeat: no-repeat;
-    background-position: center;
 }
+
 .imgEnviar:active{
     transform: scale(0.8);
 }

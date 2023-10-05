@@ -1,5 +1,14 @@
 {
   "projects": {
     "default": "login-firebase-d018e"
+  },
+  "targets": {
+    "login-firebase-d018e": {
+      "hosting": {
+        "Login-firebase": [
+          "login-firebase-d018e"
+        ]
+      }
+    }
   }
 }
