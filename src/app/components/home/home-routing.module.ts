@@ -5,6 +5,7 @@ import { HomeComponent } from './home.component';
 const routes: Routes = [
   { path: '', component: HomeComponent,
     children: [   
+      { path: '', redirectTo: 'games', pathMatch: 'full' },
       {
         path: 'sobre-mi', loadChildren: () => import ('./sobre-mi/sobre-mi.module')
         .then(mod => mod.SobreMiModule)
@@ -24,6 +25,14 @@ const routes: Routes = [
       {
         path: 'ahorcado', loadChildren: () => import ('./games/ahorcado/ahorcado.module')
         .then(mod => mod.AhorcadoModule)
+      },  
+      {
+        path: 'high-low', loadChildren: () => import ('./games/mayor-menor/mayor-menor.module')
+        .then(mod => mod.MayorMenorModule)
+      },
+      {
+        path: 'preguntados', loadChildren: () => import ('./games/preguntados/preguntados.module')
+        .then(mod => mod.PreguntadosModule)
       },
 
   ]

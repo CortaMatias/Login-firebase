@@ -29,7 +29,7 @@ export class ChatService {
     return collectionData(queryMsg, { idField: 'id' });
   }
 
-  async addMsg(mensaje: Mensaje) {
-    await addDoc(collection(this.db, 'Mensajes'), mensaje);
+  addMsg(mensaje: Mensaje) {
+     addDoc(collection(this.db, 'Mensajes'), mensaje);
   }
 }

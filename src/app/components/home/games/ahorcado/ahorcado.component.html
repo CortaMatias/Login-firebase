@@ -1,8 +1,8 @@
 <div class="container-ahorcado">
-  <div class="aside">
+  <div class="container aside">
     <img  class="ahoracado"src="assets/ahorcado/Ahorcado-{{intentos}}.png" class="ahorcado-img" alt="ahorcado" style="width: 100%"/>
   </div>
-  <div class="right">
+  <div class=" container right">
     <div class="top">
       <div class="row">
         <div class="col text-center">
@@ -35,9 +35,8 @@
             *ngFor="let letra of abecedario"
             (click)="comprobarClick(letra)"
             [style.background-color]="botonClick[letra] ? '#0275d8' : '#292b2c'"
-            class="btn text-light letra"
-          >
-            {{ letra.toUpperCase() }}
+            class="btn text-light letra"          >
+            {{ letra.toUpperCase()}}
           </button>
         </div>
       </div>

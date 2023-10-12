@@ -13,26 +13,26 @@ export class AhorcadoComponent {
     "elefante",
     "guitarra",
     "computadora",
-    "televisión",
+    "television",
     "refrigerador",
-    "matemáticas",
+    "matematicas",
     "universidad",
     "restaurantes",
     "supermercado",
-    "fotografía",
+    "fotografia",
     "cumpleaños",
-    "automóvil",
+    "automovil",
     "bicicleta",
     "helicoptero",
     "jirafa",
     "cocodrilo",
-    "hipopótamo",
-    "constelación",
-    "astronomía",
-    "geografía",
-    "arqueología",
-    "biología",
-    "química"
+    "hipopotamo",
+    "constelacion",
+    "astronomia",
+    "geografia",
+    "arqueologia",
+    "biologia",
+    "quimica"
   ];
   
   public abecedario: string[] = [
@@ -135,6 +135,7 @@ export class AhorcadoComponent {
       text: 'La palabra era: ' + this.palabra,
     });
   }
+  
   reiniciar() {
     window.location.reload();
   }

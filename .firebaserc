@@ -1,6 +1,7 @@
 {
   "projects": {
-    "default": "login-firebase-d018e"
+    "default": "login-firebase-d018e",
+    "labo4": "login-firebase-d018e"
   },
   "targets": {
     "login-firebase-d018e": {
@@ -10,5 +11,6 @@
         ]
       }
     }
-  }
+  },
+  "etags": {}
 }

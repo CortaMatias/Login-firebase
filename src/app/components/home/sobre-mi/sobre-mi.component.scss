@@ -1,27 +1,5 @@
 @import '~bootstrap/dist/css/bootstrap.min.css';
 
-
-.container-about{
-  width: 90vw;
-  height: 90vh;
-  border: 1px solid white;
-  display: flex;
-  padding: 20px;
-  justify-content: center;
-  align-items: center;
-
-}
-
-
-
-#page-content{
-margin-top: 30px; 
-}
-
-.user-card-full {
-  overflow: hidden;
-}
-
 .card {
   border-radius: 10px;
   -webkit-box-shadow: 0 2px 20px 0 rgba(69,90,100,0.08);
